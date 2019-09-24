@@ -1,0 +1,25 @@
+{
+  "name": "auto-build-basic-project",
+  "version": "0.1.0",
+  "description": "vue-cli插件，用于快速搭建前端基础工程",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wupeiwen/auto-build-basic-project.git"
+  },
+  "keywords": [
+    "vue-cli",
+    "快速搭建",
+    "前端工程",
+    "docker"
+  ],
+  "author": "peiwen <javapeiwen2010@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wupeiwen/auto-build-basic-project/issues"
+  },
+  "homepage": "https://github.com/wupeiwen/auto-build-basic-project#readme"
+}
