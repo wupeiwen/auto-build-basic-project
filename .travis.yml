@@ -1,0 +1,14 @@
+language : node_js
+
+node_js:
+  - 10.14.2
+
+branches:
+  only:
+  - master
+
+deploy:
+  provider: npm
+  email: javpeiwen2010@gmail.com
+  api_key: "$npm_token"
+  skip_cleanup: true
