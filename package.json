@@ -1,11 +1,8 @@
 {
-  "name": "auto-build-basic-project",
+  "name": "vue-cli-plugin-auto-build-basic-project",
   "version": "0.1.0",
   "description": "vue-cli插件，用于快速搭建前端基础工程",
   "main": "index.js",
-  "scripts": {
-    "test": "node index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wupeiwen/auto-build-basic-project.git"
