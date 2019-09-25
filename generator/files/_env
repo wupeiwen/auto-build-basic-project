@@ -1,2 +1,3 @@
 TARGET='http://127.0.0.1:8080'
 LOCATION='/demo'
+VUE_APP_loginType='normal'
