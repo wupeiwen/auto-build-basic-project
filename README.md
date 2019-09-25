@@ -10,6 +10,7 @@
 * webpack gzip压缩
 * docker 镜像构建
 * 工程说明文档
+
 ![](./screenshot/basic_project.png)
 
 ### 插件使用
