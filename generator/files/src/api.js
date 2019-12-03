@@ -2,11 +2,11 @@
  * @Author: wupeiwen javapeiwen2010@gmail.com
  * @Date: 2018-09-18 10:19:23
  * @Last Modified by: wupeiwen javapeiwen2010@gmail.com
- * @Last Modified time: 2019-09-24 19:53:46
+ * @Last Modified time: 2019-12-03 10:04:37
  */
 
 //  引入httpUtil
-import { get, post } from '@/utils/httpUtil'
+import { get, post } from '@/plugins/httpUtil'
 // 基本路径
 const baseUrl = process.env.LOCATION
 
