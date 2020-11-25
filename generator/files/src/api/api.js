@@ -6,7 +6,7 @@
  */
 
 //  引入httpUtil
-import { get, post } from '@/plugins/httpUtil'
+import { get, post } from '@/api/httpUtil'
 // 基本路径
 const baseUrl = process.env.VUE_APP_LOCATION
 
