@@ -1,3 +1,9 @@
+/*
+ * @Author: wupeiwen <javapeiwen2010@gmail.com>
+ * @Date: 2020-12-10 11:02:58
+ * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
+ * @LastEditTime: 2020-12-14 09:39:42
+ */
 const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = (() => {
@@ -18,14 +24,20 @@ module.exports = (() => {
         })
       ]
     },
+    css: {
+      loaderOptions: {
+        sass: {
+          prependData: `@import "~@/assets/style/global.scss";`
+        }
+      }
+    },
     devServer: {
       open: process.platform === 'darwin',
       host: '0.0.0.0',
       port: 8888,
       https: false,
       hotOnly: false,
-      proxy: {},
-      before: app => {}
+      proxy: {}
     }
   }
   option.devServer.proxy[`${process.env.LOCATION}`] = {

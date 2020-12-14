@@ -1,0 +1,246 @@
+// 弹性盒子（flex）
+.flex-row-space-b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-row-space-a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-row-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-row-end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-row-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-column-space-b{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-space-a{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-column-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-column-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.flex-column-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+// 外边距
+.mt5{
+  margin-top : 5px !important;
+}
+.mt10{
+  margin-top : 10px !important;
+}
+.mt15{
+  margin-top : 15px !important;
+}
+.mt20{
+  margin-top : 20px !important;
+}
+.mt30{
+  margin-top : 30px !important;
+}
+.mb5{
+  margin-bottom : 5px !important;
+}
+.mb10{
+  margin-bottom : 10px !important;
+}
+.mb15{
+  margin-bottom : 15px !important;
+}
+.mb20{
+  margin-bottom : 20px !important;
+}
+.mb30{
+  margin-bottom : 30px !important;
+}
+.ml5{
+  margin-left : 5px !important;
+}
+.ml10{
+  margin-left : 10px !important;
+}
+.ml15{
+  margin-left : 15px !important;
+}
+.ml20{
+  margin-left : 20px !important;
+}
+.ml30{
+  margin-left : 30px !important;
+}
+.ml40{
+  margin-left : 40px !important;
+}
+.mr5{
+  margin-right : 5px !important;
+}
+.mr10{
+  margin-right : 10px !important;
+}
+.mr16{
+  margin-right : 16px !important;
+}
+.mr20{
+  margin-right : 20px !important;
+}
+.m0{
+  margin: 0!important;
+}
+.mr30{
+  margin-right : 30px !important;
+}
+//字号
+.font10{
+  font-size: 10px !important;
+}
+.font12{
+  font-size: 12px !important;
+}
+.font14{
+  font-size: 14px !important;
+}
+.font16{
+  font-size: 16px !important;
+}
+.font18{
+  font-size: 18px !important;
+}
+.font20 {
+  font-size: 20px !important;
+}
+.font24 {
+  font-size: 24px !important;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-400 {
+  font-weight: 400;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
+// 光标样式
+.cursor-pointer{
+  cursor: pointer;
+}
+.cursor-move{
+  cursor: move;
+}
+// 浮动布局
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+//文本显示省略
+.textOneLine{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+//盒式布局
+.box-border{
+  box-sizing: border-box;
+}
+// 行内块元素
+.inline-block{
+  display: inline-block;
+}
+// 行内元素垂直对齐方式（行内元素的基线相对于该元素所在行的基线的垂直对齐方式）
+.vertical-top{
+  vertical-align: top;
+}
+.vertical-middle{
+  vertical-align: middle;
+}
+.vertical-bottom{
+  vertical-align: bottom;
+}
+// 文本水平对齐方式
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 6px;  /*滚动条宽度，竖向*/
+  height: 6px;  /*滚动条高度，横向*/
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 5px;  /*滚动条的背景区域的圆角*/
+  background-color: transparent;;/*滚动条的背景颜色*/
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;  /*滚动条的圆角*/
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: rgba(105,105,105,0.7) /*滚动条的背景颜色*/
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+  -khtml-user-select: none; /*早期浏览器*/
+  user-select: none;
+}
