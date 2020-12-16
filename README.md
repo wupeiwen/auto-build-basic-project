@@ -1,3 +1,9 @@
+<!--
+ * @Author: wupeiwen <javapeiwen2010@gmail.com>
+ * @Date: 2020-12-10 11:02:58
+ * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
+ * @LastEditTime: 2020-12-16 17:05:01
+-->
 ## auto-build-basic-project
 > vue-cli插件，用于快速搭建前端基础工程
 
@@ -7,9 +13,14 @@
 * rest接口 封装
 * 环境变量统一管理
 * scss预处理器
+* element-ui组件
+* 可视化图表组件([vue-g2](https://blog.peiwen.fun/vue-g2/#/))
+* 地理信息可视化组件([vue-mapboxgl-components](https://blog.peiwen.fun/vue-mapboxgl-components/#/))
 * webpack gzip压缩
 * docker 镜像构建
+* git钩子
 * 工程说明文档
+* ......
 
 ![](./screenshot/basic_project.png)
 
