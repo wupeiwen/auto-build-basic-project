@@ -2,7 +2,7 @@
  * @Author: wupeiwen <javapeiwen2010@gmail.com>
  * @Date: 2020-12-10 11:02:58
  * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
- * @LastEditTime: 2020-12-14 09:22:47
+ * @LastEditTime: 2020-12-16 16:35:35
  */
 module.exports = (api, options, rootOptions) => {
   // --------------------------
@@ -12,7 +12,9 @@ module.exports = (api, options, rootOptions) => {
       "build-image": `vue-cli-service build  &&  docker build -t ${options['repository']}/${options['project-name']}/${options['image-name']}:latest ./docker`
     },
     dependencies: {
-      "axios": "^0.21.0"
+      "axios": "^0.21.0",
+      "vue-router": "^3.4.9",
+      "vuex": "^3.6.0"
     },
     devDependencies: {
       "compression-webpack-plugin": "^1.1.12",
