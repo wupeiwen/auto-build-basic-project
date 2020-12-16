@@ -2,7 +2,7 @@
  * @Author: wupeiwen <javapeiwen2010@gmail.com>
  * @Date: 2020-12-10 11:02:58
  * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
- * @LastEditTime: 2020-12-16 16:35:35
+ * @LastEditTime: 2020-12-16 16:40:12
  */
 module.exports = (api, options, rootOptions) => {
   // --------------------------
@@ -26,21 +26,21 @@ module.exports = (api, options, rootOptions) => {
       "ghooks": {}
     }
   }
-  if (options['element-ui']) {
+  if (options['element-ui']===true) {
     package.dependencies['element-ui'] = "^2.14.1"
   }
-  if (options['vue-g2']) {
+  if (options['vue-g2']===true) {
     package.dependencies['@antv/g2'] = "3.5.15"
     package.dependencies['@antv/data-set'] = "0.9.6"
     package.dependencies['vue-g2'] = "^2.0.14"
   }
-  if (options['vue-mapboxgl-components']) {
+  if (options['vue-mapboxgl-components']===true) {
     package.dependencies['vue-mapboxgl-components'] = "^1.2.14"
   }
-  if (options['pre-commit-lint']) {
+  if (options['pre-commit-lint']===true) {
     package.config.ghooks['pre-commit'] = "vue-cli-service lint"
   }
-  if (options['validate-commit-msg']) {
+  if (options['validate-commit-msg']===true) {
     package.devDependencies['validate-commit-msg'] = "^2.14.0"
     package.config.ghooks['commit-msg'] = "validate-commit-msg"
   }
@@ -48,14 +48,14 @@ module.exports = (api, options, rootOptions) => {
   // --------------------------
   // main.js 相关配置
   let imports = [`import router from './router/index'`,`import store from './store/index'`,`import '@/components/regist.js'`]
-  if (options['vue-g2']) {
+  if (options['vue-g2']===true) {
     imports.push(`import 'vue-g2'`)
   }
-  if (options['vue-mapboxgl-components']) {
+  if (options['vue-mapboxgl-components']===true) {
     imports.push(`import 'vue-mapboxgl-components'`)
     imports.push(`import 'vue-mapboxgl-components/lib/vue-mapboxgl-components.css'`)
   }
-  if (options['element-ui']) {
+  if (options['element-ui']===true) {
     imports.push(`import ElementUI from 'element-ui'`)
     imports.push(`import 'element-ui/lib/theme-chalk/index.css'`)
   }
