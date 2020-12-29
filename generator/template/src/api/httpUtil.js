@@ -1,5 +1,4 @@
 import axios from 'axios'
-// import QS from 'qs'
 import { Message } from 'element-ui'
 
 // 设置请求头
@@ -69,7 +68,7 @@ axios.interceptors.response.use(
  * @param {String} url [请求的url地址]
  * @param {Object} params [请求时携带的参数]
  */
-export let get = (url, params) => {
+export let get = ({url, params}) => {
   return new Promise((resolve, reject) => {
     axios.get(url, {
       params: params
@@ -85,10 +84,20 @@ export let get = (url, params) => {
  * post方法，对应post请求
  * @param {String} url [请求的url地址]
  * @param {Object} params [请求时携带的参数]
+ * @param {Object} responseType [响应类型]
+ * @param {Object} headers [请求头]
+ * 
  */
-export let post = (url, params, responseType) => {
+export let post = ({url, params, responseType, headers}) => {
   return new Promise((resolve, reject) => {
-    axios({ method: 'post', url: url, data: params, responseType: responseType || 'json' })
+    let options = { method: 'post', url: url, data: params }
+    if (responseType) {
+      options.responseType = responseType
+    }
+    if (headers) {
+      options.headers = headers
+    }
+    axios(options)
       .then(res => {
         resolve(res.data)
       })
