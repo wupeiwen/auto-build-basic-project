@@ -21,6 +21,9 @@ ADD ./default.conf /etc/nginx/conf.d/
 # 复制构建后的代码
 COPY ./dist  /usr/share/nginx/html/
 
+# 复制证书文件
+COPY ./certs  /etc/ssl/certs/
+
 # 复制config脚本
 COPY ./config.sh "/opt/"
 

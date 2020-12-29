@@ -48,5 +48,5 @@ docker pull <%= options["repository"] %>/<%= options["project-name"] %>/<%= opti
 
 ### 将镜像启动为容器
 ```
-docker run --name=<container-name> --restart=always -d -p <front-port>:80 -e LOCATION='\/<prefix>' -e PROXY_PASS='http:\/\/<rest-serve-ip>:<rest-serve-port>' <%= options["repository"] %>/<%= options["project-name"] %>/<%= options["image-name"] %>:<version>
+docker run --name=<container-name> --restart=always -d -p <front-port>:443 -e LOCATION='\/<prefix>' -e PROXY_PASS='http:\/\/<rest-serve-ip>:<rest-serve-port>' <%= options["repository"] %>/<%= options["project-name"] %>/<%= options["image-name"] %>:<version>
 ```
