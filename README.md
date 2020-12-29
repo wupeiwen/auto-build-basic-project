@@ -18,6 +18,7 @@
 * 地理信息可视化组件([vue-mapboxgl-components](https://blog.peiwen.fun/vue-mapboxgl-components/#/))
 * webpack gzip压缩
 * docker 镜像构建
+* nginx SSL配置
 * git钩子
 * 工程说明文档
 * ......
@@ -27,5 +28,6 @@
 ### 插件使用
 在项目根目录使用`vue add auto-build-basic-project`命令完成依赖安装和自动配置
 ![](./screenshot/vue_add.png)
+
 或者使用`vue ui`命令在可视化界面中，导入项目、搜索插件`auto-build-basic-project`，最后点击安装。
 ![](./screenshot/vue_ui.png)
