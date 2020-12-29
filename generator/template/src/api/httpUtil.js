@@ -1,10 +1,3 @@
-/*
- * @Author: wupeiwen javapeiwen2010@gmail.com
- * @Date: 2018-08-14 09:28:41
- * @Last Modified by: wupeiwen javapeiwen2010@gmail.com
- * @Last Modified time: 2019-09-24 19:52:34
- */
-
 import axios from 'axios'
 // import QS from 'qs'
 import { Message } from 'element-ui'

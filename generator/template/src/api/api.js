@@ -1,10 +1,3 @@
-/*
- * @Author: wupeiwen javapeiwen2010@gmail.com
- * @Date: 2018-09-18 10:19:23
- * @Last Modified by: wupeiwen javapeiwen2010@gmail.com
- * @Last Modified time: 2019-12-03 10:07:45
- */
-
 //  引入httpUtil
 import { get, post } from '@/api/httpUtil'
 // 基本路径

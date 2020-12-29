@@ -1,9 +1,3 @@
-/*
- * @Author: wupeiwen <javapeiwen2010@gmail.com>
- * @Date: 2020-12-11 14:26:20
- * @LastEditors: wupeiwen <javapeiwen2010@gmail.com>
- * @LastEditTime: 2020-12-11 14:26:30
- */
 import Vue from 'vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
